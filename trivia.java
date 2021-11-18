@@ -151,6 +151,10 @@ public class trivia{
                 }
                 StringTokenizer st = new StringTokenizer(choice);
                 cat = Integer.parseInt(st.nextToken()); question = Integer.parseInt(st.nextToken());
+                if(!inBound(cat, question)){
+                    System.out.println("Not in bounds, choose another question");
+                    continue;
+                }
                 if(answered[cat - 1][question - 1]){
                     System.out.println("You already answered this question, choose another question");
                 }
@@ -329,5 +333,8 @@ public class trivia{
             }
         }
         return true;
+    }
+    static boolean inBound(int cat, int question){
+        return cat >= 1 && cat <= 3 && question >= 1 && question <= 4;
     }
 }
