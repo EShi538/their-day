@@ -116,6 +116,12 @@ public class trivia{
             e.printStackTrace();
         }
         System.out.println("When prompted to choose a question, respond in the form: category # (1-3) question # (1-4 <higher number = more difficult>) (Example: 3 1)");
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Questions are worth 100 times the question number. (i.e. question 1 is 100 points)");
         System.out.println();
         try {
             Thread.sleep(1000);
