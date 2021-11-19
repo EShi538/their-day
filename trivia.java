@@ -176,6 +176,7 @@ public class trivia{
             System.out.println(questions[cat - 1][question - 1]);
             System.out.print(">>");
             String answer = in.readLine();
+            System.out.println();
             System.out.println("Checking...");
             try {
                 Thread.sleep(500);
@@ -208,6 +209,7 @@ public class trivia{
                 else{
                     player2Score -= question * 100;
                 }
+                isSecondQuestion = false;
                 isPlayer1 = !isPlayer1;
             }
             if(allDone()){
