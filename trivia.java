@@ -295,7 +295,7 @@ public class trivia{
         else if(cat == 2){
             switch(question){
                 case 1: return answer.equalsIgnoreCase("crust") || answer.equalsIgnoreCase("the crust");
-                case 2: return answer.equalsIgnoreCase("a typhoon") || answer.equalsIgnoreCase("typhoon");
+                case 2: return answer.equalsIgnoreCase("a typhoon") || answer.equalsIgnoreCase("typhoon") || answer.equalsIgnoreCase("typhoons");
                 case 3: return answer.equalsIgnoreCase("seven") || answer.equals("7");
                 case 4: return answer.equalsIgnoreCase("rodinia");
             }
@@ -317,7 +317,7 @@ public class trivia{
         questions[0][3] = "What is HCl?"; //hydrochloric acid (case insensitive)
 
         questions[1][0] = "What is the outermost layer of the earth?"; //crust, the crust
-        questions[1][1] = "Hurricanes have many names depending on the location in which they form. When they form over the pacific northwest, what are they called?"; //a typhoon, typhoon
+        questions[1][1] = "Hurricanes have many names depending on the location in which they form. When they form over the pacific northwest, what are they called?"; //a typhoon, typhoon, typhoons
         questions[1][2] = "How many major tectonic plates is the earth divided into?"; //seven, 7
         questions[1][3] = "What is the oldest known supercontinent?"; //rodinia
 
